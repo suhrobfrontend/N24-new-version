@@ -175,6 +175,7 @@ body {
 .site-header__top {
   background-color: #f6f6f6;
   padding: 30px 0;
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
 }
@@ -229,12 +230,16 @@ body {
   background-color: #fff;
 }
 .site-header .sitenav {
-  padding: 25px 0;
+  padding: 12px 0;
+  margin-bottom: 40px;
 }
 .site-header .sitenav__list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+}
+.site-header .sitenav__item {
+  margin: 4px 0;
 }
 .site-header .sitenav__item:not(:last-child) {
   margin-right: 34px;
@@ -243,4 +248,10 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: #7f7f7f;
+}
+.site-header-banner__img {
+  max-width: 1200px;
+  max-height: 128px;
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=main.css.map */
