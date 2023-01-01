@@ -1,5 +1,4 @@
 /* GLOBAL */
-
 html {
   scroll-behavior: smooth;
 }
@@ -15,8 +14,14 @@ html {
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: 2px dashed $primary-blue;
+  outline-offset: 3px;
+}
+
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 ul {
@@ -28,11 +33,12 @@ img {
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 1.5;
-  // color: ;
-  background-color: #fff;
+  font-weight: 400;
+  line-height: 1.4;
+  color: $primary-gray;
+  background-color: $primary-white;
   display: flex;
   flex-direction: column;
 }
@@ -87,6 +93,28 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/* BUTTON */
+.button {
+  padding: 13px 20px;
+  border-radius: 10px;
+  color: $primary-white;
+  font-weight: 500;
+  transition: opacity 0.4s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &--primary {
+    font-size: 16px;
+    background-color: $primary-blue;
+  }
 }
 
 /* RETINA DISPLAY */

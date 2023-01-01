@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project</title>
+    <title>N24</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Favicon -->
-    <!-- <link rel="icon" href=""> -->
+    <link rel="icon" href="./images/favicon.png " />
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./css/normalize.css" />
@@ -17,28 +26,109 @@
     <!-- HEADER -->
     <header class="site-header">
       <div class="site-header__container container">
-        <div class="site-header__logo logo">
-          <a href="#" class="logo__link">
-            <img class="logo__img" src="" alt="" width="" height="" srcset="" />
-          </a>
-        </div>
+        <div class="site-header__top">
+          <!-- LOGO -->
+          <div class="site-header__logo logo">
+            <a href="index.html" class="logo__link">
+              <img
+                class="site-header__logo logo__img"
+                src="./images/logo.svg"
+                alt="N24 logo"
+                width="276"
+                height="45"
+              />
+            </a>
+          </div>
 
-        <nav class="sitenav">
-          <ul class="sitenav__list">
-            <li class="sitenav_item">
-              <a href="#" class="sitenav__link"></a>
+          <!-- CURRENCY RATES -->
+          <ul class="currency-rates site-header__currency-rates">
+            <li class="currency-rates__item">
+              <b class="currency-rates__type">$</b>
+              <span class="currency-rates__value">11246.81</span>
             </li>
-            <li class="sitenav_item">
-              <a href="#" class="sitenav__link"></a>
-            </li>
-            <li class="sitenav_item">
-              <a href="#" class="sitenav__link"></a>
-            </li>
-            <li class="sitenav_item">
-              <a href="#" class="sitenav__link"></a>
+            <li class="currency-rates__item">
+              <b class="currency-rates__type">P</b>
+              <span class="currency-rates__value">154.07</span>
             </li>
           </ul>
-        </nav>
+
+          <!-- GLOBAL SEARCH FORM -->
+          <form class="global-search-form" action="#">
+            <input
+              class="global-search-form__input"
+              type="search"
+              placeholder="Поиск"
+            />
+          </form>
+
+          <!-- LANGUAGE TOGGLER -->
+          <div class="lang-toggle">
+            <a
+              class="lang-toggle__link lang-toggle__link--active"
+              href="index.html"
+              >УЗ</a
+            >
+            <a class="lang-toggle__link" href="index.html/ru">РУ</a>
+          </div>
+
+          <!-- SITE HEADER AUTH -->
+          <a class="button button--primary" href="#">Войти</a>
+        </div>
+        <div class="container">
+          <!-- SITENAV -->
+          <nav class="sitenav">
+            <ul class="sitenav__list">
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Главное</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Интересное</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Экономика</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Политика</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Общество</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Технологии</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Спорт</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Культура</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Происшествия</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Наука</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- SITE HEADER BANNER -->
+          <aside class="site-header-banner">
+            <a
+              class="site-header-banner__link"
+              href="https://sbk-akademnashr.netlify.app"
+            >
+              <img
+                class="site-header-banner__img"
+                src="./images/shopme-ad.jpg"
+                alt=""
+                aria-hidden="true"
+                width="1200"
+                height="128"
+                srcset="./images/shopme-ad.jpg 1x, ./images/shopme-ad@2x.jpg 2x"
+              />
+            </a>
+          </aside>
+        </div>
       </div>
     </header>
     <!-- /HEADER -->
