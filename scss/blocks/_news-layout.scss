@@ -1,0 +1,139 @@
+/* NEWS LAYOUT */
+.news-layout {
+  display: flex;
+
+  &__item {
+    &--global-news {
+      max-width: 797px;
+      margin-right: 10px;
+    }
+
+    &--sidebar {
+      max-width: 393px;
+      margin-top: 54px;
+    }
+  }
+}
+
+/* GLOBAL NEWS */
+.global-news {
+  .global-news__heading {
+    font-weight: 500;
+    font-size: 24px;
+    color: $primary-black;
+    margin-bottom: 20px;
+  }
+
+  /* GLOBAL NEWS LIST */
+  &__list {
+    margin-bottom: 17px;
+  }
+
+  .global-news__item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .global-news-card {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: $secondary-bg;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .global-news-card__img {
+    max-width: 210px;
+    max-height: 165px;
+    width: 100%;
+    height: auto;
+    margin-right: 15px;
+  }
+
+  .global-news-card__content {
+    flex-grow: 1;
+  }
+
+  .global-news-card__title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  .global-news-card__link {
+    color: $primary-black;
+    display: inline-block;
+  }
+  .global-news-card__text {
+    margin-bottom: 17px;
+  }
+  .global-news-card__footer {
+    display: flex;
+    align-items: center;
+  }
+  .global-news-card__source-icon {
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  .global-news-card-source-time {
+    font-size: 12px;
+  }
+}
+
+/* GLOBAL NEWS SIDEBAR */
+.global-news-sidebar {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  /* GLOBAL NEWS SIDEBAR CARDS */
+  &__cards {
+    padding: 20px 20px 25px;
+    border-radius: 15px;
+    background-color: $secondary-bg;
+  }
+
+  &__card {
+    padding: 20px 0;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $lighter-gray;
+    }
+  }
+
+  &__heading {
+    font-size: 24px;
+    line-height: normal;
+    font-weight: 500;
+    color: $primary-black;
+    margin-bottom: 25px;
+  }
+
+  &__title {
+    font-size: 18px;
+    color: $primary-black;
+    margin-bottom: 8px;
+  }
+  &-source-time {
+    font-size: 13px;
+  }
+
+  /* GLOBAL NEWS SIDEBAR ADS */
+  &-ads__img {
+    max-width: 393px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+}

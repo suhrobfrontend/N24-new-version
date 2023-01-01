@@ -53,7 +53,7 @@ body {
 
 /* MAIN CONTENT */
 .main-content {
-  padding-top: 50px;
+  padding: 50px 0 100px;
   flex-grow: 1;
 }
 
@@ -120,6 +120,13 @@ body {
 
   &--orange {
     background-color: $primary-orange;
+  }
+
+  &--block {
+    display: block;
+    width: 100%;
+    color: $primary-black;
+    background-color: $light;
   }
 }
 
