@@ -248,6 +248,16 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: #7f7f7f;
+  transition: color 0.4s ease, opacity 0.4s ease;
+}
+.site-header .sitenav__link:hover {
+  color: #7296ec;
+}
+.site-header .sitenav__link:active {
+  opacity: 0.6;
+}
+.site-header .sitenav__link:focus {
+  color: #7296ec;
 }
 .site-header-banner__img {
   max-width: 1200px;
