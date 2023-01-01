@@ -1,0 +1,15 @@
+.notifications-cta {
+  &__wrapper {
+    margin: 60px 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background-color: $secondary-orange;
+    padding: 25px 70px 25px 25px;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    color: $primary-black;
+  }
+}

@@ -53,6 +53,7 @@ body {
 
 /* MAIN CONTENT */
 .main-content {
+  padding-top: 50px;
   flex-grow: 1;
 }
 
@@ -97,8 +98,9 @@ body {
 
 /* BUTTON */
 .button {
-  padding: 13px 20px;
+  padding: 13px 30px;
   border-radius: 10px;
+  border: none;
   color: $primary-white;
   font-weight: 500;
   transition: opacity 0.4s ease;
@@ -114,6 +116,10 @@ body {
   &--primary {
     font-size: 16px;
     background-color: $primary-blue;
+  }
+
+  &--orange {
+    background-color: $primary-orange;
   }
 }
 
