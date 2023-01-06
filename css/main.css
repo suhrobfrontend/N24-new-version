@@ -50,6 +50,7 @@
 /* GLOBAL */
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 * {
@@ -86,6 +87,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
+  height: 100%;
   color: #4a4b4c;
   background-color: #fff;
   display: flex;
@@ -185,6 +187,8 @@ body {
 }
 .site-header__top {
   background-color: #f6f6f6;
+}
+.site-header__top-inner {
   padding: 30px 0;
   margin-bottom: 10px;
   display: flex;
@@ -192,13 +196,12 @@ body {
 }
 .site-header__logo {
   margin-right: 35px;
-  transition: opacity 0.4s ease;
 }
-.site-header__logo:hover {
-  opacity: 0.8;
-}
-.site-header__logo:active {
-  opacity: 0.6;
+.site-header .logo__img {
+  width: 276px;
+  height: 45px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .site-header .currency-rates {
   display: flex;
@@ -215,6 +218,11 @@ body {
   padding: 14px 10px 14px 40px;
   border-radius: 60px;
   margin-right: 25px;
+  background-image: url("../../images/search.svg");
+  background-position: 15px center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 20px;
 }
 .site-header .lang-toggle {
   display: flex;
@@ -283,16 +291,19 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   margin-left: -10px;
+  margin-bottom: -10px;
 }
 .news-grid__item {
   max-width: 393px;
   margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 /* ARTICLE CARD */
 .article-card {
   padding: 20px 17px 15px;
   background-color: #f6f6f6;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
 }
@@ -342,8 +353,9 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 100px;
-  background-color: #ffceaa;
-  padding: 25px 70px 25px 25px;
+  background: url("../../images/notifications-bgm.png") no-repeat center;
+  padding: 25px 70px 25px 45px;
+  background-size: cover;
   border-radius: 15px;
   font-weight: 500;
   font-size: 20px;
@@ -405,6 +417,13 @@ body {
 .global-news .global-news-card__link {
   color: #000000;
   display: inline-block;
+  transition: color 0.4s ease, opacity 0.4s ease;
+}
+.global-news .global-news-card__link:hover {
+  color: #7296ec;
+}
+.global-news .global-news-card__link:active {
+  opacity: 0.6;
 }
 .global-news .global-news-card__text {
   margin-bottom: 17px;
@@ -456,7 +475,18 @@ body {
 .global-news-sidebar__title {
   font-size: 18px;
   color: #000000;
+  font-weight: 500;
   margin-bottom: 8px;
+}
+.global-news-sidebar__link {
+  color: #000000;
+  transition: color 0.4s ease, opacity 0.4s ease;
+}
+.global-news-sidebar__link:hover {
+  color: #7296ec;
+}
+.global-news-sidebar__link:active {
+  opacity: 0.6;
 }
 .global-news-sidebar-source-time {
   font-size: 13px;
@@ -466,4 +496,92 @@ body {
   width: 100%;
   height: auto;
   border-radius: 15px;
+}
+
+.site-footer {
+  padding: 40px 0;
+  background-color: #7296ec;
+  color: #fff;
+  /* SITE-FOOTER SOCIALS */
+}
+.site-footer *:focus {
+  outline-color: #fff;
+}
+.site-footer .logo-footer {
+  margin-bottom: 15px;
+}
+.site-footer .logo-footer__img {
+  width: 262px;
+  height: 28px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: opacity 0.4s ease;
+}
+.site-footer .logo-footer__img:hover {
+  opacity: 0.8;
+}
+.site-footer .logo-footer__img:active {
+  opacity: 0.6;
+}
+.site-footer__list-wrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.site-footer__list {
+  width: 50%;
+  padding-right: 24px;
+}
+.site-footer-info-links {
+  display: flex;
+}
+.site-footer__info {
+  max-width: 229px;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-right: 200px;
+}
+.site-footer__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.site-footer__link {
+  color: #fff;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 500;
+}
+.site-footer__divider {
+  border: none;
+  height: 1px;
+  background-color: #f6f6f6;
+  margin: 30px 0 20px;
+}
+.site-footer .site-footer__socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-footer__heading {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.site-footer .site-footer__social-icons {
+  display: flex;
+  align-items: center;
+}
+.site-footer__social-item:not(:last-child) {
+  margin-right: 25px;
+}
+.site-footer__social__link {
+  display: flex;
+  color: #fff;
+  transition: opacity 0.4s ease;
+}
+.site-footer__social__link:hover {
+  opacity: 0.8;
+}
+.site-footer__social__link:active {
+  opacity: 0.6;
 }/*# sourceMappingURL=main.css.map */

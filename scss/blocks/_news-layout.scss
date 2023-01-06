@@ -64,6 +64,15 @@
   .global-news-card__link {
     color: $primary-black;
     display: inline-block;
+    transition: color 0.4s ease, opacity 0.4s ease;
+
+    &:hover {
+      color: $primary-blue;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
   .global-news-card__text {
     margin-bottom: 17px;
@@ -123,8 +132,23 @@
   &__title {
     font-size: 18px;
     color: $primary-black;
+    font-weight: 500;
     margin-bottom: 8px;
   }
+
+  &__link {
+    color: $primary-black;
+    transition: color 0.4s ease, opacity 0.4s ease;
+
+    &:hover {
+      color: $primary-blue;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+  
   &-source-time {
     font-size: 13px;
   }

@@ -4,10 +4,12 @@
   justify-content: center;
   flex-wrap: wrap;
   margin-left: -10px;
+  margin-bottom: -10px;
 
   &__item {
     max-width: 393px;
     margin-left: 10px;
+    margin-bottom: 10px;
   }
 }
 
@@ -15,6 +17,7 @@
 .article-card {
   padding: 20px 17px 15px;
   background-color: $secondary-bg;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
 

@@ -1,26 +1,29 @@
 /* SITE-HEADER */
 .site-header {
+  
   &__top {
     background-color: $secondary-bg;
-    padding: 30px 0;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
+    
+    &-inner {
+      padding: 30px 0;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
   }
 
   /* LOGO */
-  &__logo {
-    margin-right: 35px;
-    transition: opacity 0.4s ease;
+&__logo {
+  margin-right: 35px;
+}
 
-    &:hover {
-      opacity: 0.8;
-    }
-
-    &:active {
-      opacity: 0.6;
-    }
+.logo {
+  &__img {
+    width: 276px;
+    height: 45px;
+    object-fit: contain;
   }
+}
 
   /* CURRENCY RATES */
   .currency-rates {
@@ -43,6 +46,11 @@
       padding: 14px 10px 14px 40px;
       border-radius: 60px;
       margin-right: 25px;
+      background-image: url("../../images/search.svg");
+      background-position: 15px center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 20px;
     }
   }
 
