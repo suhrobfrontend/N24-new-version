@@ -250,6 +250,8 @@ body {
 }
 .site-header .sitenav {
   padding: 12px 0;
+}
+.site-header .sitenav:not(:last-child) {
   margin-bottom: 40px;
 }
 .site-header .sitenav__list {
@@ -496,6 +498,53 @@ body {
   width: 100%;
   height: auto;
   border-radius: 15px;
+}
+
+.site-registration__heading {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: normal;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 696px;
+}
+
+.form__group:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.form__group-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.form__group-wrapper .form__group {
+  margin-bottom: 0;
+  width: calc(50% - 5px);
+}
+
+.form__field {
+  padding: 18px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: block;
+  width: 100%;
+}
+
+.form__message {
+  resize: vertical;
+  min-height: 180px;
+  margin-bottom: 20px;
+}
+
+.form__send-btn {
+  margin-left: auto;
 }
 
 .site-footer {

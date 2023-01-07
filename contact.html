@@ -26,8 +26,10 @@
 
     <!-- HEADER -->
     <header class="site-header">
-        <div class="site-header__top">
-          <div class="site-header__top-inner container">
+      <div class="site-header__top">
+        <div class="container">
+          <div class="site-header__top-inner">
+
             <!-- LOGO -->
             <div class="site-header__logo logo">
               <a href="index.html" class="logo__link">
@@ -40,7 +42,7 @@
                 />
               </a>
             </div>
-  
+
             <!-- CURRENCY RATES -->
             <ul class="currency-rates site-header__currency-rates">
               <li class="currency-rates__item">
@@ -52,7 +54,7 @@
                 <span class="currency-rates__value">154.07</span>
               </li>
             </ul>
-  
+
             <!-- GLOBAL SEARCH FORM -->
             <form class="global-search-form" action="#">
               <input
@@ -61,7 +63,7 @@
                 placeholder="Поиск"
               />
             </form>
-  
+
             <!-- LANGUAGE TOGGLER -->
             <div class="lang-toggle">
               <a
@@ -71,14 +73,14 @@
               >
               <a class="lang-toggle__link" href="index.html/ru">РУ</a>
             </div>
-  
             <!-- SITE HEADER AUTH -->
-            <a class="button button--primary" href="#">Войти</a>
+            <a class="button button--primary" href="./contact.html">Войти</a>
           </div>
         </div>
+      </div>
 
-        <div class="site-header__bottom container">
-          <!-- SITENAV -->
+      <div class="site-header__bottom container">
+        <!-- SITENAV -->
         <nav class="sitenav">
           <ul class="sitenav__list">
             <li class="sitenav__item">
@@ -113,14 +115,43 @@
             </li>
           </ul>
         </nav>
-
-        </div>
-    </header>
-    <!-- /HEADER -->
+      </div>
+  </header>
+  <!-- /HEADER -->
 
     <!-- MAIN CONTENT -->
-    <main class="main-content container">
+    <main class="main-content">
       <h1 class="visually-hidden">Namanganliklar24 - yangiliklar sayti</h1>
+      
+      <div class="container">
+        <!-- SITE REGISTRATION -->
+      <section class="site-registration">
+        <h2 class="site-registration__heading">Напишите нам</h2>
+
+        <!-- SITE REGISTRATION FORM -->
+        <form action="https://echo.htmlacademy.ru" method="POST" class="site-registration__form form">
+          <div class="form__group-wrapper">
+            <div class="form__group">
+              <input class="form__field" type="text" name="full_name" placeholder="Имя" aria-label="Имя" required>
+            </div>
+            <div class="form__group">
+              <input class="form__field" type="text" name="tel" placeholder="Номер телефона" aria-label="Номер телефона" required>
+            </div>
+          </div>
+          <div class="form__group">
+            <input class="form__field" type="text" name="email" placeholder="Электронная почта" aria-label="Электронная почта" required>
+          </div>
+          <div class="form__group">
+          <textarea class="form__field form__message" name="message" placeholder="Текст" aria-label="Текст" required></textarea>  
+          </div>
+          <button class="form__send-btn button button--primary" type="submit">Отправить</button>
+        </form>
+        <!-- /SITE REGISTRATION FORM -->
+        
+      </section>
+      <!-- /SITE REGISTRATION -->
+      </div>
+
     </main>
     <!-- /MAIN CONTENT -->
 

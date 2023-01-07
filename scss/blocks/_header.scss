@@ -85,7 +85,9 @@
   /* SITENAV */
   .sitenav {
     padding: 12px 0;
-    margin-bottom: 40px;
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
 
     &__list {
       display: flex;
