@@ -500,6 +500,12 @@ body {
   border-radius: 15px;
 }
 
+/* SITE REGISTRATION INNER */
+.site-registration__inner {
+  display: flex;
+  align-items: flex-start;
+}
+
 .site-registration__heading {
   font-weight: 500;
   font-size: 24px;
@@ -508,10 +514,16 @@ body {
   margin-bottom: 20px;
 }
 
+/* FORM */
+.site-registration__form {
+  margin-right: 10px;
+}
+
 .form {
   display: flex;
   flex-direction: column;
   max-width: 696px;
+  width: 100%;
 }
 
 .form__group:not(:last-of-type) {
@@ -545,6 +557,33 @@ body {
 
 .form__send-btn {
   margin-left: auto;
+}
+
+/* FORM INFO */
+.form-info {
+  max-width: 494px;
+  width: 100%;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  padding: 20px 25px;
+}
+
+.form-info__item {
+  padding: 20px 0 19px;
+}
+.form-info__item:not(:last-child) {
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.form-info__title {
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 7px;
+  line-height: normal;
+}
+
+.form-info__link {
+  color: #000000;
 }
 
 .site-footer {

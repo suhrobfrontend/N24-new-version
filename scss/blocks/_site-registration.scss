@@ -1,6 +1,9 @@
-.site-registration {
-  
+/* SITE REGISTRATION INNER */
+.site-registration__inner {
+  display: flex;
+  align-items: flex-start;
 }
+
 .site-registration__heading {
   font-weight: 500;
   font-size: 24px;
@@ -8,12 +11,17 @@
   color: $primary-black;
   margin-bottom: 20px;
 }
+
+/* FORM */
 .site-registration__form {
+  margin-right: 10px;
 }
+
 .form {
   display: flex;
   flex-direction: column;
   max-width: 696px;
+  width: 100%;
 }
 
 
@@ -53,4 +61,32 @@
 
 .form__send-btn {
   margin-left: auto;
+}
+
+
+/* FORM INFO */
+.site-registration__form-info {
+}
+.form-info {
+  max-width: 494px;
+  width: 100%;
+  background-color: $secondary-bg;
+  border-radius: 10px;
+  padding: 20px 25px;
+}
+.form-info__item {
+  padding: 20px 0 19px;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $lighter-gray;
+  }
+}
+.form-info__title {
+  font-weight: 500;
+  color: $primary-black;
+  margin-bottom: 7px;
+  line-height: normal;
+}
+.form-info__link {
+  color: $primary-black;
 }
