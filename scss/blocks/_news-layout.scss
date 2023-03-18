@@ -88,6 +88,7 @@
     line-height: 1.2;
     margin-bottom: 10px;
   }
+
   .global-news-card__link {
     color: $primary-black;
     display: inline-block;
@@ -100,9 +101,25 @@
     &:active {
       opacity: 0.6;
     }
+
+    @media only screen and (max-width: $tablet) {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
   }
+
   .global-news-card__text {
     margin-bottom: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
   }
   .global-news-card__footer {
     display: flex;
@@ -184,7 +201,7 @@
   &-ads__link {
     display: flex;
   }
-  
+
   &-ads__img {
     max-width: 393px;
     width: 100%;
