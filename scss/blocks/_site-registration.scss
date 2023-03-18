@@ -2,6 +2,10 @@
 .site-registration__inner {
   display: flex;
   align-items: flex-start;
+
+  @media only screen and (max-width: $tablet-l) {
+    flex-direction: column-reverse;
+  }
 }
 
 .site-registration__heading {
@@ -15,6 +19,10 @@
 /* FORM */
 .site-registration__form {
   margin-right: 10px;
+
+  @media only screen and (max-width: $tablet-l) {
+    margin-right: 0;
+  }
 }
 
 .form {
@@ -22,12 +30,13 @@
   flex-direction: column;
   max-width: 696px;
   width: 100%;
+
+  @media only screen and (max-width: $tablet-l) {
+    max-width: 100%;
+  }
 }
 
-
-
 .form__group {
-  
   &:not(:last-of-type) {
     margin-bottom: 10px;
   }
@@ -38,10 +47,19 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
-  
+
   .form__group {
     margin-bottom: 0;
     width: calc(50% - 5px);
+
+    @media only screen and (max-width: $mobile) {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media only screen and (max-width: $mobile) {
+    flex-direction: column;
   }
 }
 
@@ -63,16 +81,23 @@
   margin-left: auto;
 }
 
-
 /* FORM INFO */
 .site-registration__form-info {
+  @media only screen and (max-width: $tablet-l) {
+    margin-bottom: 20px;
+  }
 }
+
 .form-info {
   max-width: 494px;
   width: 100%;
   background-color: $secondary-bg;
   border-radius: 10px;
   padding: 20px 25px;
+
+  @media only screen and (max-width: $tablet-l) {
+    max-width: 100%;
+  }
 }
 .form-info__item {
   padding: 20px 0 19px;

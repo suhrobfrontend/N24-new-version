@@ -23,66 +23,77 @@
   </head>
 
   <body>
-
     <!-- HEADER -->
     <header class="site-header">
-        <div class="site-header__top">
-          <div class="container">
-            <div class="site-header__top-inner">
-              
-              <!-- LOGO -->
-              <div class="site-header__logo logo">
-                <a href="index.html" class="logo__link">
-                  <img
-                    class="logo__img"
-                    src="./images/logo.svg"
-                    alt="N24 logo"
-                    width="276"
-                    height="45"
-                  />
-                </a>
-              </div>
-
-              <!-- CURRENCY RATES -->
-              <ul class="currency-rates site-header__currency-rates">
-                <li class="currency-rates__item">
-                  <b class="currency-rates__type">$</b>
-                  <span class="currency-rates__value">11246.81</span>
-                </li>
-                <li class="currency-rates__item">
-                  <b class="currency-rates__type">P</b>
-                  <span class="currency-rates__value">154.07</span>
-                </li>
-              </ul>
-
-              <!-- GLOBAL SEARCH FORM -->
-              <form class="global-search-form" action="#">
-                <input
-                  class="global-search-form__input"
-                  type="search"
-                  placeholder="Поиск"
+      <div class="site-header__top">
+        <div class="container">
+          <div class="site-header__top-inner">
+            <!-- LOGO -->
+            <div class="site-header__logo logo">
+              <a href="/" class="logo__link">
+                <img
+                  class="logo__img"
+                  src="./images/logo.svg"
+                  alt="N24 logo"
+                  width="276"
+                  height="45"
                 />
-              </form>
-
-              <!-- LANGUAGE TOGGLER -->
-              <div class="lang-toggle">
-                <a
-                  class="lang-toggle__link lang-toggle__link--active"
-                  href="index.html"
-                  >УЗ</a
-                >
-                <a class="lang-toggle__link" href="index.html/ru">РУ</a>
-              </div>
-              <!-- SITE HEADER AUTH -->
-
-              <a class="button button--primary" href="./contact.html">Войти</a>
+              </a>
             </div>
+
+            <!-- CURRENCY RATES -->
+            <ul class="currency-rates site-header__currency-rates">
+              <li class="currency-rates__item">
+                <b class="currency-rates__type">$</b>
+                <span class="currency-rates__value">11246.81</span>
+              </li>
+              <li class="currency-rates__item">
+                <b class="currency-rates__type">P</b>
+                <span class="currency-rates__value">154.07</span>
+              </li>
+            </ul>
+
+            <!-- GLOBAL SEARCH FORM -->
+            <form class="global-search-form" action="#">
+              <input
+                class="global-search-form__input"
+                type="search"
+                placeholder="Поиск"
+              />
+            </form>
+
+            <!-- LANGUAGE TOGGLER -->
+            <div class="lang-toggle">
+              <a
+                class="lang-toggle__link lang-toggle__link--active"
+                href="index.html"
+                >УЗ</a
+              >
+              <a class="lang-toggle__link" href="index.html/ru">РУ</a>
+            </div>
+
+            <!-- SITENAV TOGGLER -->
+            <button
+              class="site-header__nav-toggler button button--primary"
+              data-nav-toggler
+            >
+              Меню
+            </button>
+            <!-- /SITENAV TOGGLER -->
+
+            <!-- SITE HEADER AUTH -->
+            <a
+              class="site-header__auth-btn button button--primary"
+              href="./contact.html"
+              >Войти</a
+            >
           </div>
         </div>
+      </div>
 
-        <div class="site-header__bottom container">
-          <!-- SITENAV -->
-        <nav class="sitenav">
+      <div class="site-header__bottom container">
+        <!-- SITENAV -->
+        <nav class="sitenav" data-sitenav>
           <ul class="sitenav__list">
             <li class="sitenav__item">
               <a class="sitenav__link" href="./index.html">Главное</a>
@@ -116,558 +127,583 @@
             </li>
           </ul>
         </nav>
+        <!-- /SITENAV -->
 
         <!-- SITE HEADER BANNER -->
-        <aside class="site-header-banner contain"./list.html">
+        <aside class="site-header-banner contain">
           <a
             class="site-header-banner__link"
-            href="#"
+            href="https://tme.to/suhrobbek_soatov"
           >
             <img
               class="site-header-banner__img"
-              src="./images/shopme-ad.jpg"
+              src="images/shopme-ad.jpg"
               alt=""
               aria-hidden="true"
               width="1200"
               height="128"
-              srcset="./images/shopme-ad.jpg 1x, ./images/shopme-ad@2x.jpg 2x"
+              srcset="images/shopme-ad.jpg 1x, images/shopme-ad@2x.jpg 2x"
             />
           </a>
         </aside>
-        </div>
+        <!-- /SITE HEADER BANNER -->
+      </div>
     </header>
     <!-- /HEADER -->
 
     <!-- MAIN CONTENT -->
     <main class="main-content">
-      
       <div class="container">
         <h1 class="visually-hidden">Namanganliklar24 - yangiliklar sayti</h1>
 
         <!-- TOP-NEWS -->
-      <section class="top-news">
-        <h2 class="visually-hidden">Qaynoq yangiliklar</h2>
+        <section class="top-news">
+          <h2 class="visually-hidden">Qaynoq yangiliklar</h2>
 
-        <!-- NEWS GRID -->
-        <div class="news-grid">
-          <!-- NEWS GRID ITEM -->
-          <article class="news-grid__item article-card">
-            <h3 class="article-card__title">
-              <a class="article-card__link" href="#"
-                >Кандидат на пост канцлера ФРГ Шольц назвал условия
-                коалиционного соглашения</a
-              >
-            </h3>
-            <p class="article-card__description">
-              Лидер Социал-демократической партии Германии (СДПГ) и кандидат на
-              должность...
-            </p>
-            <img
-              class="article-card__img"
-              src="./images/germany.jpg"
-              alt="Кандидат на пост канцлера ФРГ Шольц назвал условия
+          <!-- NEWS GRID -->
+          <div class="news-grid">
+            <!-- NEWS GRID ITEM -->
+            <article class="news-grid__item article-card">
+              <h3 class="article-card__title">
+                <a class="article-card__link" href="#"
+                  >Кандидат на пост канцлера ФРГ Шольц назвал условия
+                  коалиционного соглашения</a
+                >
+              </h3>
+              <p class="article-card__description">
+                Лидер Социал-демократической партии Германии (СДПГ) и кандидат
+                на должность...
+              </p>
+              <img
+                class="article-card__img"
+                src="./images/germany.jpg"
+                alt="Кандидат на пост канцлера ФРГ Шольц назвал условия
                 коалиционного соглашения"
-              width="360"
-              height="165"
-              srcset="./images/germany.jpg 1x, ./images/germany@2x.jpg 2x"
-            />
-            <footer class="article-card__footer">
-              <img
-                class="article-card__source-icon"
-                src="./images/krasnaya-vesna.jpg"
-                alt="krasnaya vesna logo"
-                width="20"
-                height="20"
-                srcset="
-                  ./images/krasnaya-vesna.jpg    1x,
-                  ./images/krasnaya-vesna@2x.jpg 2x
-                "
+                width="360"
+                height="165"
+                srcset="./images/germany.jpg 1x, ./images/germany@2x.jpg 2x"
               />
-              <div class="article-card-source-time">
-                <span class="article-card__source">ИА Красная Весна</span>
-                <time class="article-card__time" datetime="2023-01-01T15:55:00"
-                  >15:55</time
-                >
-              </div>
-            </footer>
-          </article>
-
-          <!-- NEWS GRID ITEM -->
-          <article class="news-grid__item article-card">
-            <h3 class="article-card__title">
-              <a class="article-card__link" href="#"
-                >Ученые доказали экспериментальным путем пользу покровных
-                культур</a
-              >
-            </h3>
-            <p class="article-card__description">
-              Новое исследование ученых университета Иллинойса объединяет
-              полевые данные...
-            </p>
-            <img
-              class="article-card__img"
-              src="./images/wheat.jpg"
-              alt="Ученые доказали экспериментальным путем пользу покровных
-                культур"
-              width="360"
-              height="165"
-              srcset="./images/wheat.jpg 1x, ./images/wheat@2x.jpg 2x"
-            />
-            <footer class="article-card__footer">
-              <img
-                class="article-card__source-icon"
-                src="./images/gazetaru.jpg"
-                alt="gazetaru logo"
-                width="20"
-                height="20"
-                srcset="./images/gazetaru.jpg 1x, ./images/gazetaru@2x.jpg 2x"
-              />
-              <div class="article-card-source-time">
-                <span class="article-card__source">Газета.Ru</span>
-                <time class="article-card__time" datetime="2023-01-01T12:54:00"
-                  >12:54</time
-                >
-              </div>
-            </footer>
-          </article>
-
-          <!-- NEWS GRID ITEM -->
-          <article class="news-grid__item article-card">
-            <h3 class="article-card__title">
-              <a class="article-card__link" href="#"
-                >Baidu запустила публичный сервис роботакси Apollo Go в
-                Шанхае</a
-              >
-            </h3>
-            <p class="article-card__description">
-              НАвтопарк Baidu состоит из модифицированных электромобилей EV...
-            </p>
-            <img
-              class="article-card__img"
-              src="./images/baidu.jpg"
-              alt="Baidu запустила публичный сервис роботакси Apollo Go в
-                Шанхае"
-              width="360"
-              height="165"
-              srcset="./images/baidu.jpg 1x, ./images/baidu@2x.jpg 2x"
-            />
-            <footer class="article-card__footer">
-              <img
-                class="article-card__source-icon"
-                src="./images/hitech-plus.jpg"
-                alt="hitech-plus logo"
-                width="20"
-                height="20"
-                srcset="
-                  ./images/hitech-plus.jpg    1x,
-                  ./images/hitech-plus@2x.jpg 2x
-                "
-              />
-              <div class="article-card-source-time">
-                <span class="article-card__source">Хайтек+</span>
-                <time class="article-card__time" datetime="2023-01-01T12:54:00"
-                  >12:54</time
-                >
-              </div>
-            </footer>
-          </article>
-
-          <!-- NEWS GRID ITEM -->
-          <article class="news-grid__item article-card">
-            <h3 class="article-card__title">
-              <a class="article-card__link" href="#"
-                >Стали известны ёмкости аккумуляторов всех моделей iPhone 13</a
-              >
-            </h3>
-            <p class="article-card__description">
-              Во время презентации iPhone 13 Apple придала большое значения...
-            </p>
-            <img
-              class="article-card__img"
-              src="./images/iphone-13.jpg"
-              alt="Стали известны ёмкости аккумуляторов всех моделей iPhone
-                13"
-              width="360"
-              height="165"
-              srcset="./images/iphone-13.jpg 1x, ./images/iphone-13@2x.jpg 2x"
-            />
-            <footer class="article-card__footer">
-              <img
-                class="article-card__source-icon"
-                src="./images/digger.jpg"
-                alt="digger logo"
-                width="20"
-                height="20"
-                aria-hidden="true"
-                srcset="./images/digger.jpg 1x, ./images/digger@2x.jpg 2x"
-              />
-              <div class="article-card-source-time">
-                <span class="article-card__source">Digger.ru</span>
-                <time class="article-card__time" datetime="2023-01-01T14:25:00"
-                  >14:25</time
-                >
-              </div>
-            </footer>
-          </article>
-
-          <!-- NEWS GRID ITEM -->
-          <article class="news-grid__item article-card">
-            <h3 class="article-card__title">
-              <a class="article-card__link" href="#"
-                >Nature: ученые смогли доказать природное происхождение
-                коронавируса SARS-CoV-2</a
-              >
-            </h3>
-            <p class="article-card__description">
-              Во время презентации iPhone 13 Apple придала большое значение...
-            </p>
-            <img
-              class="article-card__img"
-              src="./images/sars-cov.jpg"
-              alt="Nature: ученые смогли доказать природное происхождение
-                коронавируса SARS-CoV-2"
-              width="360"
-              height="165"
-              srcset="./images/sars-cov.jpg 1x, ./images/sars-cov@2x.jpg 2x"
-            />
-            <footer class="article-card__footer">
-              <img
-                class="article-card__source-icon"
-                src="./images/lentaru.jpg"
-                alt="lentaru logo"
-                width="20"
-                height="20"
-                srcset="./images/lentaru.jpg 1x, ./images/lentaru@2x.jpg 2x"
-              />
-              <div class="article-card-source-time">
-                <span class="article-card__source">Lenta.ru</span>
-                <time class="article-card__time" datetime="2023-01-01T10:54:00"
-                  >10:54</time
-                >
-              </div>
-            </footer>
-          </article>
-
-          <!-- NEWS GRID ITEM -->
-          <article class="news-grid__item article-card">
-            <h3 class="article-card__title">
-              <a class="article-card__link" href="#"
-                >Китайская марка JAC повысила цены на лифтбек и пикап в
-                России</a
-              >
-            </h3>
-            <p class="article-card__description">
-              Две модели китайского бренда JAC из пяти, представленных на
-              российском...
-            </p>
-            <img
-              class="article-card__img"
-              src="./images/jac.jpg"
-              alt="Китайская марка JAC повысила цены на лифтбек и пикап в
-                России"
-              width="360"
-              height="165"
-              srcset="./images/jac.jpg 1x, ./images/jac@2x.jpg 2x"
-            />
-            <footer class="article-card__footer">
-              <img
-                class="article-card__source-icon"
-                src="./images/tarantas-news.png"
-                alt="tarantas-news logo"
-                width="20"
-                height="20"
-                srcset="
-                  ./images/tarantas-news.png    1x,
-                  ./images/tarantas-news@2x.png 2x
-                "
-              />
-              <div class="article-card-source-time">
-                <span class="article-card__source">Тарантас Ньюс</span>
-                <time class="article-card__time" datetime="2023-01-01T10:44:00"
-                  >10:44</time
-                >
-              </div>
-            </footer>
-          </article>
-        </div>
-      </section>
-      <!-- /TOP-NEWS -->
-
-      <!-- NOTIFICATIONS CTA -->
-      <section class="notifications-cta">
-        <div class="notifications-cta__wrapper">
-          <p class="notifications-cta__text">
-            Хотите быть в курсе свежих новостей?<br />
-            Включите уведомления!
-          </p>
-          <button class="button button--orange">Включит</button>
-        </div>
-      </section>
-      <!-- /NOTIFICATIONS CTA -->
-
-      <!-- POPULAR NEWS -->
-      <div class="news-layout">
-        <!-- GLOBAL NEWS -->
-        <section
-          class="news-layout__item news-layout__item--global-news global-news"
-        >
-          <h2 class="global-news__heading">В мире</h2>
-          <ul class="global-news__list">
-            <li class="global-news__item">
-              <article class="global-news-card">
+              <footer class="article-card__footer">
                 <img
-                  class="global-news-card__img"
-                  src="./images/new-flight.jpg"
-                  alt="Китайский Чунцин запустил чартерный рейс для студентов
-                    до Британии"
-                  width="210"
-                  height="165"
+                  class="article-card__source-icon"
+                  src="./images/krasnaya-vesna.jpg"
+                  alt="krasnaya vesna logo"
+                  width="20"
+                  height="20"
                   srcset="
-                    ./images/new-flight.jpg    1x,
-                    ./images/new-flight@2x.jpg 2x
+                    ./images/krasnaya-vesna.jpg    1x,
+                    ./images/krasnaya-vesna@2x.jpg 2x
                   "
                 />
-                <div class="global-news-card__content">
-                  <h3 class="global-news-card__title">
-                    <a class="global-news-card__link" href="#">
-                      Китайский Чунцин запустил чартерный рейс для студентов до
-                      Британии
-                    </a>
-                  </h3>
-                  <p class="global-news-card__text">
-                    Чартерный рейс с 244 китайскими студентами вылетел из города
-                    центрального подчинения Чунцина на юго-западе Китая в
-                    британский Манчестер...
-                  </p>
-                  <footer class="global-news-card__footer">
-                    <img
-                      class="global-news-card__source-icon"
-                      src="./images/krasnaya-vesna.jpg"
-                      alt="krasnaya vesna logo"
-                      width="20"
-                      height="20"
-                      srcset="
-                        ./images/krasnaya-vesna.jpg    1x,
-                        ./images/krasnaya-vesna@2x.jpg 2x
-                      "
-                    />
-                    <div class="global-news-card-source-time">
-                      <span class="global-news-card__source"
-                        >ИА Красная Весна</span
-                      >
-                      <time datetime="2023-01-01T12:25:00">12:25</time>
-                    </div>
-                  </footer>
+                <div class="article-card-source-time">
+                  <span class="article-card__source">ИА Красная Весна</span>
+                  <time
+                    class="article-card__time"
+                    datetime="2023-01-01T15:55:00"
+                    >15:55</time
+                  >
                 </div>
-              </article>
-            </li>
-            <li class="global-news__item">
-              <article class="global-news-card">
-                <img
-                  class="global-news-card__img"
-                  src="./images/merkel.jpg"
-                  alt=""
-                  width="210"
-                  height="165"
-                  srcset="./images/merkel.jpg 1x, ./images/merkel@2x.jpg 2x"
-                />
-                <div class="global-news-card__content">
-                  <h3 class="global-news-card__title">
-                    <a class="global-news-card__link" href="#">
-                      В Германии выпустят ограниченную партию плюшевых мишек в
-                      образе Меркель
-                    </a>
-                  </h3>
-                  <p class="global-news-card__text">
-                    БЕРЛИН, 19 сентября. / ТАСС/. Знаменитая фабрика по
-                    производству плюшевых игрушек в городе Кобург (федеральная
-                    земля Бавария) изготовила уникального...
-                  </p>
-                  <footer class="global-news-card__footer">
-                    <img
-                      class="global-news-card__source-icon"
-                      src="./images/tass.jpg"
-                      alt="krasnaya vesna logo"
-                      width="20"
-                      height="20"
-                      srcset="./images/tass.jpg 1x, ./images/tass@2x.jpg 2x"
-                    />
-                    <div class="global-news-card-source-time">
-                      <span class="global-news-card__source">ТАСС</span>
-                      <time datetime="2023-01-01T11:35:00">11:35</time>
-                    </div>
-                  </footer>
-                </div>
-              </article>
-            </li>
-            <li class="global-news__item">
-              <article class="global-news-card">
-                <img
-                  class="global-news-card__img"
-                  src="./images/china.jpg"
-                  alt="Китайский Чунцин запустил чартерный рейс для студентов
-                    до Британии"
-                  width="210"
-                  height="165"
-                  srcset="./images/china.jpg 1x, ./images/china@2x.jpg 2x"
-                />
-                <div class="global-news-card__content">
-                  <h3 class="global-news-card__title">
-                    <a class="global-news-card__link" href="#">
-                      Китайский Чунцин запустил чартерный рейс для студентов до
-                      Британии
-                    </a>
-                  </h3>
-                  <p class="global-news-card__text">
-                    Чартерный рейс с 244 китайскими студентами вылетел из города
-                    центрального подчинения Чунцина на юго-западе Китая в
-                    британский Манчестер...
-                  </p>
-                  <footer class="global-news-card__footer">
-                    <img
-                      class="global-news-card__source-icon"
-                      src="./images/rbk.jpg"
-                      alt="rbk logo"
-                      width="20"
-                      height="20"
-                      srcset="./images/rbk.jpg 1x, ./images/rbk@2x.jpg 2x"
-                    />
-                    <div class="global-news-card-source-time">
-                      <span class="global-news-card__source"
-                        >РБК Инвестиции</span
-                      >
-                      <time datetime="2023-01-01T09:35:00">09:35</time>
-                    </div>
-                  </footer>
-                </div>
-              </article>
-            </li>
-            <li class="global-news__item">
-              <article class="global-news-card">
-                <img
-                  class="global-news-card__img"
-                  src="./images/aukus.jpg"
-                  alt="Китайский Чунцин запустил чартерный рейс для студентов
-                    до Британии"
-                  width="210"
-                  height="165"
-                  srcset="./images/aukus.jpg 1x, ./images/aukus@2x.jpg 2x"
-                />
-                <div class="global-news-card__content">
-                  <h3 class="global-news-card__title">
-                    <a class="global-news-card__link" href="#">
-                      Китайский Чунцин запустил чартерный рейс для студентов до
-                      Британии
-                    </a>
-                  </h3>
-                  <p class="global-news-card__text">
-                    Чартерный рейс с 244 китайскими студентами вылетел из города
-                    центрального подчинения Чунцина на юго-западе Китая в
-                    британский Манчестер...
-                  </p>
-                  <footer class="global-news-card__footer">
-                    <img
-                      class="global-news-card__source-icon"
-                      src="./images/solenka.png"
-                      alt="Solenka info logo"
-                      width="20"
-                      height="20"
-                      srcset="
-                        ./images/solenka.png    1x,
-                        ./images/solenka@2x.png 2x
-                      "
-                    />
-                    <div class="global-news-card-source-time">
-                      <span class="global-news-card__source">Solenka.info</span>
-                      <time datetime="2023-01-01T19:43:00">19:43</time>
-                    </div>
-                  </footer>
-                </div>
-              </article>
-            </li>
-          </ul>
-          <button class="global-news__btn button button--block" type="button">
-            Показать ещё
-          </button>
-        </section>
-        <!-- /GLOBAL NEWS -->
+              </footer>
+            </article>
 
-        <!-- GLOBAL NEWS SIDEBAR -->
-        <section
-          class="news-layout__item news-layout__item--sidebar global-news-sidebar"
-        >
-          <div class="global-news-sidebar__item global-news-sidebar__cards">
-            <h2 class="global-news-sidebar__heading">Главное</h2>
-
-            <!-- GLOBAL NEWS SIDEBAR CARD -->
-            <div class="global-news-sidebar__card">
-              <h3 class="global-news-sidebar__title">
-                <a class="global-news-sidebar__link" href="#">В Фергане создадут узбекско-пакистанский университет</a>
-              </h3>
-              <div class="global-news-sidebar-source-time">
-                <span class="global-news-sidebar__source"
-                  >Sputnik Узбекистан</span
+            <!-- NEWS GRID ITEM -->
+            <article class="news-grid__item article-card">
+              <h3 class="article-card__title">
+                <a class="article-card__link" href="#"
+                  >Ученые доказали экспериментальным путем пользу покровных
+                  культур</a
                 >
-                <time datetime="2023-01-01T14:09:00">14:09</time>
-              </div>
-            </div>
-
-            <!-- GLOBAL NEWS SIDEBAR CARD -->
-            <div class="global-news-sidebar__card">
-              <h3 class="global-news-sidebar__title">
-                <a class="global-news-sidebar__link" href="#">Узбекистан утвердил соглашение о содействии занятости в странах
-                  СНГ</a>
               </h3>
-              <div class="global-news-sidebar-source-time">
-                <span class="global-news-sidebar__source"
-                  >ИА Красная Весна</span
-                >
-                <time datetime="2023-01-01T10:19:00">10:19</time>
-              </div>
-            </div>
-
-            <!-- GLOBAL NEWS SIDEBAR CARD -->
-            <div class="global-news-sidebar__card">
-              <h3 class="global-news-sidebar__title">
-                <a class="global-news-sidebar__link" href="#">В Узбекистане увеличиваются очереди за автомобилями UzAuto</a>
-              </h3>
-              <div class="global-news-sidebar-source-time">
-                <span class="global-news-sidebar__source"
-                  >Северная газета (Армянск)</span
-                >
-                <time datetime="2023-01-01T13:50:00">13:50</time>
-              </div>
-            </div>
-
-            <!-- GLOBAL NEWS SIDEBAR CARD -->
-            <div class="global-news-sidebar__card">
-              <h3 class="global-news-sidebar__title">
-                <a class="global-news-sidebar__link" href="#">Минтуризма опровергло приостановку выплат за шаги</a>
-              </h3>
-              <div class="global-news-sidebar-source-time">
-                <span class="global-news-sidebar__source"
-                  >Sputnik Узбекистан</span
-                >
-                <time datetime="2023-01-01T14:32:00">14:32</time>
-              </div>
-            </div>
-          </div>
-
-          <aside class="global-news-sidebar__item global-news-sidebar-ads">
-            <a class="global-news-sidebar-ads__link" href="#">
+              <p class="article-card__description">
+                Новое исследование ученых университета Иллинойса объединяет
+                полевые данные...
+              </p>
               <img
-                class="global-news-sidebar-ads__img"
-                src="./images/olmos-ad.jpg"
-                alt="olmos ads"
-                width="393"
-                height="338"
-                srcset="./images/olmos-ad.jpg 1x, ./images/olmos-ad@2x.jpg 2x"
+                class="article-card__img"
+                src="./images/wheat.jpg"
+                alt="Ученые доказали экспериментальным путем пользу покровных
+                культур"
+                width="360"
+                height="165"
+                srcset="./images/wheat.jpg 1x, ./images/wheat@2x.jpg 2x"
               />
-            </a>
-          </aside>
+              <footer class="article-card__footer">
+                <img
+                  class="article-card__source-icon"
+                  src="./images/gazetaru.jpg"
+                  alt="gazetaru logo"
+                  width="20"
+                  height="20"
+                  srcset="./images/gazetaru.jpg 1x, ./images/gazetaru@2x.jpg 2x"
+                />
+                <div class="article-card-source-time">
+                  <span class="article-card__source">Газета.Ru</span>
+                  <time
+                    class="article-card__time"
+                    datetime="2023-01-01T12:54:00"
+                    >12:54</time
+                  >
+                </div>
+              </footer>
+            </article>
+
+            <!-- NEWS GRID ITEM -->
+            <article class="news-grid__item article-card">
+              <h3 class="article-card__title">
+                <a class="article-card__link" href="#"
+                  >Baidu запустила публичный сервис роботакси Apollo Go в
+                  Шанхае</a
+                >
+              </h3>
+              <p class="article-card__description">
+                НАвтопарк Baidu состоит из модифицированных электромобилей EV...
+              </p>
+              <img
+                class="article-card__img"
+                src="./images/baidu.jpg"
+                alt="Baidu запустила публичный сервис роботакси Apollo Go в
+                Шанхае"
+                width="360"
+                height="165"
+                srcset="./images/baidu.jpg 1x, ./images/baidu@2x.jpg 2x"
+              />
+              <footer class="article-card__footer">
+                <img
+                  class="article-card__source-icon"
+                  src="./images/hitech-plus.jpg"
+                  alt="hitech-plus logo"
+                  width="20"
+                  height="20"
+                  srcset="
+                    ./images/hitech-plus.jpg    1x,
+                    ./images/hitech-plus@2x.jpg 2x
+                  "
+                />
+                <div class="article-card-source-time">
+                  <span class="article-card__source">Хайтек+</span>
+                  <time
+                    class="article-card__time"
+                    datetime="2023-01-01T12:54:00"
+                    >12:54</time
+                  >
+                </div>
+              </footer>
+            </article>
+
+            <!-- NEWS GRID ITEM -->
+            <article class="news-grid__item article-card">
+              <h3 class="article-card__title">
+                <a class="article-card__link" href="#"
+                  >Стали известны ёмкости аккумуляторов всех моделей iPhone
+                  13</a
+                >
+              </h3>
+              <p class="article-card__description">
+                Во время презентации iPhone 13 Apple придала большое значения...
+              </p>
+              <img
+                class="article-card__img"
+                src="./images/iphone-13.jpg"
+                alt="Стали известны ёмкости аккумуляторов всех моделей iPhone
+                13"
+                width="360"
+                height="165"
+                srcset="./images/iphone-13.jpg 1x, ./images/iphone-13@2x.jpg 2x"
+              />
+              <footer class="article-card__footer">
+                <img
+                  class="article-card__source-icon"
+                  src="./images/digger.jpg"
+                  alt="digger logo"
+                  width="20"
+                  height="20"
+                  aria-hidden="true"
+                  srcset="./images/digger.jpg 1x, ./images/digger@2x.jpg 2x"
+                />
+                <div class="article-card-source-time">
+                  <span class="article-card__source">Digger.ru</span>
+                  <time
+                    class="article-card__time"
+                    datetime="2023-01-01T14:25:00"
+                    >14:25</time
+                  >
+                </div>
+              </footer>
+            </article>
+
+            <!-- NEWS GRID ITEM -->
+            <article class="news-grid__item article-card">
+              <h3 class="article-card__title">
+                <a class="article-card__link" href="#"
+                  >Nature: ученые смогли доказать природное происхождение
+                  коронавируса SARS-CoV-2</a
+                >
+              </h3>
+              <p class="article-card__description">
+                Во время презентации iPhone 13 Apple придала большое значение...
+              </p>
+              <img
+                class="article-card__img"
+                src="./images/sars-cov.jpg"
+                alt="Nature: ученые смогли доказать природное происхождение
+                коронавируса SARS-CoV-2"
+                width="360"
+                height="165"
+                srcset="./images/sars-cov.jpg 1x, ./images/sars-cov@2x.jpg 2x"
+              />
+              <footer class="article-card__footer">
+                <img
+                  class="article-card__source-icon"
+                  src="./images/lentaru.jpg"
+                  alt="lentaru logo"
+                  width="20"
+                  height="20"
+                  srcset="./images/lentaru.jpg 1x, ./images/lentaru@2x.jpg 2x"
+                />
+                <div class="article-card-source-time">
+                  <span class="article-card__source">Lenta.ru</span>
+                  <time
+                    class="article-card__time"
+                    datetime="2023-01-01T10:54:00"
+                    >10:54</time
+                  >
+                </div>
+              </footer>
+            </article>
+
+            <!-- NEWS GRID ITEM -->
+            <article class="news-grid__item article-card">
+              <h3 class="article-card__title">
+                <a class="article-card__link" href="#"
+                  >Китайская марка JAC повысила цены на лифтбек и пикап в
+                  России</a
+                >
+              </h3>
+              <p class="article-card__description">
+                Две модели китайского бренда JAC из пяти, представленных на
+                российском...
+              </p>
+              <img
+                class="article-card__img"
+                src="./images/jac.jpg"
+                alt="Китайская марка JAC повысила цены на лифтбек и пикап в
+                России"
+                width="360"
+                height="165"
+                srcset="./images/jac.jpg 1x, ./images/jac@2x.jpg 2x"
+              />
+              <footer class="article-card__footer">
+                <img
+                  class="article-card__source-icon"
+                  src="./images/tarantas-news.png"
+                  alt="tarantas-news logo"
+                  width="20"
+                  height="20"
+                  srcset="
+                    ./images/tarantas-news.png    1x,
+                    ./images/tarantas-news@2x.png 2x
+                  "
+                />
+                <div class="article-card-source-time">
+                  <span class="article-card__source">Тарантас Ньюс</span>
+                  <time
+                    class="article-card__time"
+                    datetime="2023-01-01T10:44:00"
+                    >10:44</time
+                  >
+                </div>
+              </footer>
+            </article>
+          </div>
         </section>
-        <!-- /GLOBAL NEWS SIDEBAR -->
-      </div>
+        <!-- /TOP-NEWS -->
+
+        <!-- NOTIFICATIONS CTA -->
+        <section class="notifications-cta">
+          <div class="notifications-cta__wrapper">
+            <p class="notifications-cta__text">
+              Хотите быть в курсе свежих новостей?<br />
+              Включите уведомления!
+            </p>
+            <button class="button button--orange">Включит</button>
+          </div>
+        </section>
+        <!-- /NOTIFICATIONS CTA -->
+
+        <!-- POPULAR NEWS -->
+        <div class="news-layout">
+          <!-- GLOBAL NEWS -->
+          <section
+            class="news-layout__item news-layout__item--global-news global-news"
+          >
+            <h2 class="global-news__heading">В мире</h2>
+            <ul class="global-news__list">
+              <li class="global-news__item">
+                <article class="global-news-card">
+                  <img
+                    class="global-news-card__img"
+                    src="./images/new-flight.jpg"
+                    alt="Китайский Чунцин запустил чартерный рейс для студентов
+                    до Британии"
+                    width="210"
+                    height="165"
+                    srcset="
+                      ./images/new-flight.jpg    1x,
+                      ./images/new-flight@2x.jpg 2x
+                    "
+                  />
+                  <div class="global-news-card__content">
+                    <h3 class="global-news-card__title">
+                      <a class="global-news-card__link" href="#">
+                        Китайский Чунцин запустил чартерный рейс для студентов
+                        до Британии
+                      </a>
+                    </h3>
+                    <p class="global-news-card__text">
+                      Чартерный рейс с 244 китайскими студентами вылетел из
+                      города центрального подчинения Чунцина на юго-западе Китая
+                      в британский Манчестер...
+                    </p>
+                    <footer class="global-news-card__footer">
+                      <img
+                        class="global-news-card__source-icon"
+                        src="./images/krasnaya-vesna.jpg"
+                        alt="krasnaya vesna logo"
+                        width="20"
+                        height="20"
+                        srcset="
+                          ./images/krasnaya-vesna.jpg    1x,
+                          ./images/krasnaya-vesna@2x.jpg 2x
+                        "
+                      />
+                      <div class="global-news-card-source-time">
+                        <span class="global-news-card__source"
+                          >ИА Красная Весна</span
+                        >
+                        <time datetime="2023-01-01T12:25:00">12:25</time>
+                      </div>
+                    </footer>
+                  </div>
+                </article>
+              </li>
+              <li class="global-news__item">
+                <article class="global-news-card">
+                  <img
+                    class="global-news-card__img"
+                    src="./images/merkel.jpg"
+                    alt=""
+                    width="210"
+                    height="165"
+                    srcset="./images/merkel.jpg 1x, ./images/merkel@2x.jpg 2x"
+                  />
+                  <div class="global-news-card__content">
+                    <h3 class="global-news-card__title">
+                      <a class="global-news-card__link" href="#">
+                        В Германии выпустят ограниченную партию плюшевых мишек в
+                        образе Меркель
+                      </a>
+                    </h3>
+                    <p class="global-news-card__text">
+                      БЕРЛИН, 19 сентября. / ТАСС/. Знаменитая фабрика по
+                      производству плюшевых игрушек в городе Кобург (федеральная
+                      земля Бавария) изготовила уникального...
+                    </p>
+                    <footer class="global-news-card__footer">
+                      <img
+                        class="global-news-card__source-icon"
+                        src="./images/tass.jpg"
+                        alt="krasnaya vesna logo"
+                        width="20"
+                        height="20"
+                        srcset="./images/tass.jpg 1x, ./images/tass@2x.jpg 2x"
+                      />
+                      <div class="global-news-card-source-time">
+                        <span class="global-news-card__source">ТАСС</span>
+                        <time datetime="2023-01-01T11:35:00">11:35</time>
+                      </div>
+                    </footer>
+                  </div>
+                </article>
+              </li>
+              <li class="global-news__item">
+                <article class="global-news-card">
+                  <img
+                    class="global-news-card__img"
+                    src="./images/china.jpg"
+                    alt="Китайский Чунцин запустил чартерный рейс для студентов
+                    до Британии"
+                    width="210"
+                    height="165"
+                    srcset="./images/china.jpg 1x, ./images/china@2x.jpg 2x"
+                  />
+                  <div class="global-news-card__content">
+                    <h3 class="global-news-card__title">
+                      <a class="global-news-card__link" href="#">
+                        Китайский Чунцин запустил чартерный рейс для студентов
+                        до Британии
+                      </a>
+                    </h3>
+                    <p class="global-news-card__text">
+                      Чартерный рейс с 244 китайскими студентами вылетел из
+                      города центрального подчинения Чунцина на юго-западе Китая
+                      в британский Манчестер...
+                    </p>
+                    <footer class="global-news-card__footer">
+                      <img
+                        class="global-news-card__source-icon"
+                        src="./images/rbk.jpg"
+                        alt="rbk logo"
+                        width="20"
+                        height="20"
+                        srcset="./images/rbk.jpg 1x, ./images/rbk@2x.jpg 2x"
+                      />
+                      <div class="global-news-card-source-time">
+                        <span class="global-news-card__source"
+                          >РБК Инвестиции</span
+                        >
+                        <time datetime="2023-01-01T09:35:00">09:35</time>
+                      </div>
+                    </footer>
+                  </div>
+                </article>
+              </li>
+              <li class="global-news__item">
+                <article class="global-news-card">
+                  <img
+                    class="global-news-card__img"
+                    src="./images/aukus.jpg"
+                    alt="Китайский Чунцин запустил чартерный рейс для студентов
+                    до Британии"
+                    width="210"
+                    height="165"
+                    srcset="./images/aukus.jpg 1x, ./images/aukus@2x.jpg 2x"
+                  />
+                  <div class="global-news-card__content">
+                    <h3 class="global-news-card__title">
+                      <a class="global-news-card__link" href="#">
+                        Китайский Чунцин запустил чартерный рейс для студентов
+                        до Британии
+                      </a>
+                    </h3>
+                    <p class="global-news-card__text">
+                      Чартерный рейс с 244 китайскими студентами вылетел из
+                      города центрального подчинения Чунцина на юго-западе Китая
+                      в британский Манчестер...
+                    </p>
+                    <footer class="global-news-card__footer">
+                      <img
+                        class="global-news-card__source-icon"
+                        src="./images/solenka.png"
+                        alt="Solenka info logo"
+                        width="20"
+                        height="20"
+                        srcset="
+                          ./images/solenka.png    1x,
+                          ./images/solenka@2x.png 2x
+                        "
+                      />
+                      <div class="global-news-card-source-time">
+                        <span class="global-news-card__source"
+                          >Solenka.info</span
+                        >
+                        <time datetime="2023-01-01T19:43:00">19:43</time>
+                      </div>
+                    </footer>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button class="global-news__btn button button--block" type="button">
+              Показать ещё
+            </button>
+          </section>
+          <!-- /GLOBAL NEWS -->
+
+          <!-- GLOBAL NEWS SIDEBAR -->
+          <section
+            class="news-layout__item news-layout__item--sidebar global-news-sidebar"
+          >
+            <div class="global-news-sidebar__item global-news-sidebar__cards">
+              <h2 class="global-news-sidebar__heading">Главное</h2>
+
+              <!-- GLOBAL NEWS SIDEBAR CARD -->
+              <div class="global-news-sidebar__card">
+                <h3 class="global-news-sidebar__title">
+                  <a class="global-news-sidebar__link" href="#"
+                    >В Фергане создадут узбекско-пакистанский университет</a
+                  >
+                </h3>
+                <div class="global-news-sidebar-source-time">
+                  <span class="global-news-sidebar__source"
+                    >Sputnik Узбекистан</span
+                  >
+                  <time datetime="2023-01-01T14:09:00">14:09</time>
+                </div>
+              </div>
+
+              <!-- GLOBAL NEWS SIDEBAR CARD -->
+              <div class="global-news-sidebar__card">
+                <h3 class="global-news-sidebar__title">
+                  <a class="global-news-sidebar__link" href="#"
+                    >Узбекистан утвердил соглашение о содействии занятости в
+                    странах СНГ</a
+                  >
+                </h3>
+                <div class="global-news-sidebar-source-time">
+                  <span class="global-news-sidebar__source"
+                    >ИА Красная Весна</span
+                  >
+                  <time datetime="2023-01-01T10:19:00">10:19</time>
+                </div>
+              </div>
+
+              <!-- GLOBAL NEWS SIDEBAR CARD -->
+              <div class="global-news-sidebar__card">
+                <h3 class="global-news-sidebar__title">
+                  <a class="global-news-sidebar__link" href="#"
+                    >В Узбекистане увеличиваются очереди за автомобилями
+                    UzAuto</a
+                  >
+                </h3>
+                <div class="global-news-sidebar-source-time">
+                  <span class="global-news-sidebar__source"
+                    >Северная газета (Армянск)</span
+                  >
+                  <time datetime="2023-01-01T13:50:00">13:50</time>
+                </div>
+              </div>
+
+              <!-- GLOBAL NEWS SIDEBAR CARD -->
+              <div class="global-news-sidebar__card">
+                <h3 class="global-news-sidebar__title">
+                  <a class="global-news-sidebar__link" href="#"
+                    >Минтуризма опровергло приостановку выплат за шаги</a
+                  >
+                </h3>
+                <div class="global-news-sidebar-source-time">
+                  <span class="global-news-sidebar__source"
+                    >Sputnik Узбекистан</span
+                  >
+                  <time datetime="2023-01-01T14:32:00">14:32</time>
+                </div>
+              </div>
+            </div>
+
+            <aside class="global-news-sidebar__item global-news-sidebar-ads">
+              <a class="global-news-sidebar-ads__link" href="#">
+                <img
+                  class="global-news-sidebar-ads__img"
+                  src="./images/olmos-ad.jpg"
+                  alt="olmos ads"
+                  width="393"
+                  height="338"
+                  srcset="./images/olmos-ad.jpg 1x, ./images/olmos-ad@2x.jpg 2x"
+                />
+              </a>
+            </aside>
+          </section>
+          <!-- /GLOBAL NEWS SIDEBAR -->
+        </div>
       </div>
     </main>
     <!-- /MAIN CONTENT -->
@@ -677,57 +713,126 @@
       <div class="site-footer__container container">
         <div class="site-footer__logo logo-footer">
           <a class="logo-footer__link" href="./index.html">
-            <img class="logo-footer__img" src="./images/logo-white.svg" alt="" width="262" height="28" >
+            <img
+              class="logo-footer__img"
+              src="./images/logo-white.svg"
+              alt=""
+              width="262"
+              height="28"
+            />
           </a>
         </div>
         <div class="site-footer-info-links">
           <div class="site-footer__info">
-            Воспроизводство, копирование, использование информации с сайта «NAMANGANLIKLAR24.UZ» возможно только с предварительного письменного разрешения редакции.
+            Воспроизводство, копирование, использование информации с сайта
+            «NAMANGANLIKLAR24.UZ» возможно только с предварительного письменного
+            разрешения редакции.
           </div>
           <div class="site-footer__list-wrapper">
             <ul class="site-footer__list">
-              <li class="site-footer__item"><a class="site-footer__link" href="#">Информация о сайте</a></li>
-              <li class="site-footer__item"><a class="site-footer__link" href="#">Использование материалов</a></li>
-              <li class="site-footer__item"><a class="site-footer__link" href="#">Напишите нам</a></li>
-              <li class="site-footer__item"><a class="site-footer__link" href="#">Темы дня</a></li>
+              <li class="site-footer__item">
+                <a class="site-footer__link" href="#">Информация о сайте</a>
+              </li>
+              <li class="site-footer__item">
+                <a class="site-footer__link" href="#"
+                  >Использование материалов</a
+                >
+              </li>
+              <li class="site-footer__item">
+                <a class="site-footer__link" href="contact.html"
+                  >Напишите нам</a
+                >
+              </li>
+              <li class="site-footer__item">
+                <a class="site-footer__link" href="#">Темы дня</a>
+              </li>
             </ul>
             <ul class="site-footer__list">
-              <li class="site-footer__item"><a class="site-footer__link" href="#">Реклама</a></li>
-              <li class="site-footer__item"><a class="site-footer__link" href="#">Наша команда</a></li>
-              <li class="site-footer__item"><a class="site-footer__link" href="#">Прислать новость</a></li>
+              <li class="site-footer__item">
+                <a class="site-footer__link" href="#">Реклама</a>
+              </li>
+              <li class="site-footer__item">
+                <a class="site-footer__link" href="#">Наша команда</a>
+              </li>
+              <li class="site-footer__item">
+                <a class="site-footer__link" href="#">Прислать новость</a>
+              </li>
             </ul>
           </div>
         </div>
-        <hr class="site-footer__divider">
+        <hr class="site-footer__divider" />
         <div class="site-footer__socials">
-          <h2 class="site-footer__heading">
-            Наши<br/>социальные сети
-          </h2>
+          <h2 class="site-footer__heading">Наши<br />социальные сети</h2>
           <ul class="site-footer__social-icons">
             <!-- Facebook icon -->
             <li class="site-footer__social-item">
               <a class="site-footer__social__link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="transform: ;msFilter:;"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325 1.42-3.592 3.5-3.592.699-.002 1.399.034 2.095.107v2.42h-1.435c-1.128 0-1.348.538-1.348 1.325v1.735h2.697l-.35 2.725h-2.348V21H20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"></path></svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  style="transform: ; msfilter: "
+                >
+                  <path
+                    d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325 1.42-3.592 3.5-3.592.699-.002 1.399.034 2.095.107v2.42h-1.435c-1.128 0-1.348.538-1.348 1.325v1.735h2.697l-.35 2.725h-2.348V21H20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"
+                  ></path>
+                </svg>
               </a>
             </li>
             <!-- Instagram icon -->
             <li class="site-footer__social-item">
               <a class="site-footer__social__link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="transform: ;msFilter:;"><path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"></path><circle cx="11.994" cy="11.979" r="3.003"></circle></svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  style="transform: ; msfilter: "
+                >
+                  <path
+                    d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"
+                  ></path>
+                  <circle cx="11.994" cy="11.979" r="3.003"></circle>
+                </svg>
               </a>
             </li>
 
             <!-- Telegram icon -->
             <li class="site-footer__social-item">
               <a class="site-footer__social__link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="transform: ;msFilter:;"><path d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"></path></svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  style="transform: ; msfilter: "
+                >
+                  <path
+                    d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"
+                  ></path>
+                </svg>
               </a>
             </li>
 
             <!-- YouTube icon -->
             <li class="site-footer__social-item">
               <a class="site-footer__social__link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="transform: ;msFilter:;"><path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"></path></svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  style="transform: ; msfilter: "
+                >
+                  <path
+                    d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"
+                  ></path>
+                </svg>
               </a>
             </li>
           </ul>
@@ -735,5 +840,8 @@
       </div>
     </footer>
     <!-- /FOOTER -->
+
+    <!-- SCRIPT -->
+    <script src="js/main.js"></script>
   </body>
 </html>
