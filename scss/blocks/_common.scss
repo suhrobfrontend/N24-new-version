@@ -131,6 +131,7 @@ body {
     background-color: $light;
   }
 
+<<<<<<< HEAD
   @media only screen and (max-width: $tablet) {
     padding: 10px 24px;
   }
@@ -139,3 +140,12 @@ body {
     padding: 8px 20px;
   }
 }
+=======
+/* RETINA DISPLAY */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {}
+>>>>>>> ed7d57688588978c086c2a6b36d8be00a58d8082
