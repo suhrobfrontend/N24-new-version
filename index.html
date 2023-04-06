@@ -425,7 +425,9 @@
               Хотите быть в курсе свежих новостей?<br />
               Включите уведомления!
             </p>
-            <button class="button button--orange">Включит</button>
+            <button class="button button--orange" data-modal-open>
+              Включит
+            </button>
           </div>
         </section>
         <!-- /NOTIFICATIONS CTA -->
@@ -840,6 +842,30 @@
       </div>
     </footer>
     <!-- /FOOTER -->
+
+    <!-- MODAL -->
+    <div class="modal" data-modal>
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <h2 class="visually-hidden">Уведомления</h2>
+          <button class="modal__close" data-modal-close>
+            <img src="images/icon-close.svg" alt="" width="24" height="24" />
+          </button>
+          <p class="modal__lead-text">
+            Хотите быть в курсе свежих новостей?<br />Включите уведомления!
+          </p>
+          <div class="modal__actions">
+            <a
+              class="button button--orange button--large"
+              href="https://tme.to/svkhrobbeck"
+              target="_blank"
+              >Включит</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /MODAL -->
 
     <!-- SCRIPT -->
     <script src="js/main.js"></script>
