@@ -573,6 +573,12 @@ body.hidden {
     text-align: center;
   }
 }
+@media only screen and (max-width: 420px) {
+  .notifications-cta .button {
+    display: block;
+    width: 100%;
+  }
+}
 
 /* NEWS LAYOUT */
 .news-layout {

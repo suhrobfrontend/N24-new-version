@@ -35,4 +35,11 @@
       text-align: center;
     }
   }
+
+  .button {
+    @media only screen and (max-width: 420px) {
+      display: block;
+      width: 100%;
+    }
+  }
 }
