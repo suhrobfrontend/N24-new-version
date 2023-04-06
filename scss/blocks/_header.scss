@@ -125,6 +125,7 @@
 
   /* SITE HEADER NAV BTN */
   .site-header__nav-toggler {
+    border-radius: 5px;
     display: none;
 
     @media only screen and (max-width: $tablet) {
